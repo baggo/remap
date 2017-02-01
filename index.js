@@ -1,12 +1,1 @@
-module.exports = (chars) => (value) => {
-  var result = ''
-  var i = value.length
-  while (i--) {
-    var oldChar = value[i]
-    var newChar = chars[oldChar]
-    if (!newChar)
-      newChar = oldChar
-    result = newChar + result
-  }
-  return result
-}
+module.exports=function(c){return function(v){for(var r='',i=v.length;i--;x=v[i],r=(c[x]||x)+r);return r}}
